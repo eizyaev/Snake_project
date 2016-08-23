@@ -26,9 +26,9 @@ architecture ds of draw_snake is
 									snake_x <= j2_x + i mod 256 ;
 								end if ;
 								if j1_y > j2_y then
-									snake_y <= j1_y + i mod 256;
+									snake_y <= j1_y + j mod 256;
 								else
-									snake_y <= j2_y + i mod 256 ;
+									snake_y <= j2_y + j mod 256 ;
 								end if ;
 							end if;
 			end loop ; -- identifier
