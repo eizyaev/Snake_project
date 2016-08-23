@@ -68,16 +68,21 @@ architecture snk of snake_logic is
 					end if;
 			end case;
 		end if;
-		if direction = 0 then
-				state <= rt;
-		elsif direction = 1 then
-			state <= lt;
-		elsif direction = 2 then
-			state <= up;
-		else
-			state <=down;
-		end if;
 	end if;
 	end process;
 
+	process (clk)
+		begin
+		if rising_edge(clk) then
+			if direction = 0 then
+				state <= rt;
+			elsif direction = 1 then
+				state <= lt;
+			elsif direction = 2 then
+				state <= up;
+			else
+				state <=down;
+			end if;
+		end if;		
+	end process;
 end snk;

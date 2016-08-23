@@ -5,7 +5,7 @@ entity KBD is
    port (   resetN     		: in  std_logic ;
             clk        		: in  std_logic ;
 			KBD_clk   		: in  std_logic ; 
-			KBD_dat   		: in  std_logic ;
+			KBD_data   		: in  std_logic ;
 			start   		: out  std_logic ;
 			dout_new        : out std_logic;
 			direction		: out integer range 0 to 3 ); -- 2:up, 1:left, 0:right, 3:down
