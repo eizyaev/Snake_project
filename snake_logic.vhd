@@ -16,3 +16,7 @@ entity snake_logic is
 			tail_x			: out std_logic_vector(7 downto 0);
 			tail_y			: out std_logic_vector(7 downto 0)) ;
 end snake_logic ;
+
+architecture snk of snake_logic is
+
+end snk;
